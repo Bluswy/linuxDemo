@@ -6,10 +6,10 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 
-static int cmdNum = 6;
+static int cmdNum = 8;
 // windoes和linux指令对应关系
-char **winCmds[6] = {"dir","rename","move","del","cd","exit"};
-char **linuxCmds[6] = {"ls","mv","mv","rm","cd","exit"};
+char **winCmds[8] = {"dir", "rename", "move", "del", "cd", "exit", "md", "type"};
+char **linuxCmds[8] = {"ls", "mv","mv", "rm", "cd", "exit", "mkdir", "touch"};
 
 char *winInLinux(char *winCmd) {
     int i;

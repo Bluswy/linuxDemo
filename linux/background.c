@@ -54,8 +54,7 @@ void executeCmd(const char *cmd, char *echo) {
     return;
 }
 
-char *concatPath(char *pwd, char *filename)
-{
+char *concatPath(char *pwd, char *filename) {
     char* path;
     path = (char*) malloc(1024 * sizeof(char));
     strcpy(path, pwd);
@@ -64,8 +63,7 @@ char *concatPath(char *pwd, char *filename)
     return path;
 }
 
-void main()
-{
+void main() {
     char echo[1000];
     char msgFromQueue[256];
     char syn[20];
